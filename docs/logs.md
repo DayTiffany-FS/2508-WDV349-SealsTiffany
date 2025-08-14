@@ -28,7 +28,15 @@ Each week I will summarize my milestone activity and progress by writing a stand
 
 ### Week 1
 
-Replace this paragraph with your stand up for this week. Use the prompts above to summarize your most recent milestone activity and work.
+⚙️ Overview - The main goal for this week was getting the project idea in order, work list set up, and 
+<br>
+🌵 Challenges - Other than forgetting my only usable computer for this kind of work, my biggest challenge was getting everything sorted and my thoughts and ideas in order.
+<br>
+🏆 Accomplishments - Despite putting myself behind, I was able to get my ideas out efficiently and in an order that made sense to me.
+<br>
+🔮 Next Steps - Research and experimentation with routes and library components to make sure the parts of my project work the way I would like them to, specifically the photo libraries and the booking calendar.
+
+<br>
 
 ### Week 2
 
