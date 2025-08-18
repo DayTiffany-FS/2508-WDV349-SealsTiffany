@@ -36,16 +36,16 @@ Bio: Runs a small wedding and event planning company that specializes in using a
 
 *Use Cases help drive design decisions as well as testing procedures. During development we regularly test and confirm the work in progress matches up with our Use Cases. This provides valuable insight into how our application is addressing the needs of the user and allows us to correct missteps early. This [article](https://www.softwaretestinghelp.com/use-case-testing/) gives additional background Use Cases and Use Case Testing.*
 
-A user wants to see pictures and/or videos of the band:
-     *Goes to home page.
-     *Clicks on link in navigation bar "pics/vids"
-     *User can click to look at albums or videos
-     *User clicks desired album title to see pictures or video to watch video
-A user wants to book the band for a party:
-     *Goes to home page.
-     *Clicks on link to "book band"
-     *User fills out input fields
-     *User clicks submit and waits to be contacted by band
+A user wants to see pictures and/or videos of the band:  
+     *Goes to home page.   
+     *Clicks on link in navigation bar "pics/vids".  
+     *User can click to look at albums or videos.  
+     *User clicks desired album title to see pictures or video to watch video.  
+A user wants to book the band for a party:  
+     *Goes to home page.  
+     *Clicks on link to "book band".  
+     *User fills out input fields.  
+     *User clicks submit and waits to be contacted by band.  
 
 
 ## Problem Statement
