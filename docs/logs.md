@@ -40,7 +40,15 @@ Each week I will summarize my milestone activity and progress by writing a stand
 
 ### Week 2
 
-My next stand up will go here...
+⚙️ Overview - The main goal for this week was working on different design elements.
+<br>
+🌵 Challenges - My biggest problem was working on things in the wrong order. My brain works in big pictures fairly quickly and I skipped basic steps. I did go back and do the opener steps (like wireframing) to keep all my pieces in order to learn that I skipped best practice steps.
+<br>
+🏆 Accomplishments - I didn't do everything at the last minute or forget my computer somewhere this week. 
+<br>
+🔮 Next Steps - Design work and clean up will be the priority next week.
+
+<br>
 
 ### Week 3
 

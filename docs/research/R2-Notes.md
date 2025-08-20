@@ -72,8 +72,11 @@ Use this section to highlight your own independent research. Replace the example
 
 **Resource 6: Branding-colors**
 [Website Color Schemes](https://wpengine.com/resources/website-color-schemes/): This site explained the importance of color and its affects on branding and consumer perception/reception.  
-<br>
 
+**Resource 7: Photo Album API**
+[Top 27 Photography API's for Developers](https://publicapis.dev/category/photography): This site links several API's related to pictures and images that will be worth experimenting with to buid the badn media page.  
+
+<br>
 **Note:**  
 
 * It is acceptable to provide multiple links for a single sub-topic.  
