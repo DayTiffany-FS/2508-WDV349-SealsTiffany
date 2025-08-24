@@ -55,13 +55,13 @@ What makes a site more user-friendly
 Use this section to highlight your own independent research. Replace the example references below with your own links and recommended resources. For example...
 
 **Resource 1: Title**  
-[Name of Site or Article Here](https://www.someaddress.com/full/url/): Here's what I learned about...  
+[Dark Design Patterns Catalog](https://www.uxtigers.com/post/dark-design): This article shows major things to avoid in UX design.  
 
 **Resource 2: Title**    
-[Name of Site or Article Here](https://www.someaddress.com/full/url/): This site showed me how to...
+[Laws of UX](https://lawsofux.com/): This site explained why certain design elements work better than others.
 
 **Resource 3: Title**      
-[Name of Site or Article Here](https://www.someaddress.com/full/url/): This article explains that...
+[How to Fix the 8 Most Common Visual Content Design Mistakes](https://www.columnfivemedia.com/8-design-mistakes-ruin-your-visual-content-easy-fixes/): This article explains problems in web design and what should be done to fix them and why it should be done.
 
 <br>
 
