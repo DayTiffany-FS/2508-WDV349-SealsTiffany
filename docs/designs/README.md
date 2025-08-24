@@ -23,6 +23,6 @@ Date: 8/13/2025
 Update: Created prototype design on Figma for a basis on where to start stylistically with the needs
 of each page for the site.
 
-Date: 8/18
+Date: 8/18/2025
 Update: Created wireframe for project, uploaded to docs/designs. Created style tile and uploaded to docs.
 
