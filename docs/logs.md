@@ -52,7 +52,13 @@ Each week I will summarize my milestone activity and progress by writing a stand
 
 ### Week 3
 
-Stay tuned, this stand up is coming soon...
+⚙️ Overview - This week focused on design and design research
+<br>
+🌵 Challenges - Connecting the dots. Getting the idea in my head down on the prototype and making the parts do what I intended them to do.
+<br>
+🏆 Accomplishments - Fixing previous problems. I forget sometimes that things that are obvious to me (the person with the vision in their head) are not always obvious to others. This causes me to skip some simple steps and notations that I was able to catch up on and clarify this week.
+<br>
+🔮 Next Steps - Up next is working on a presentation and refining the prototype.
 
 ### Week 4
 
