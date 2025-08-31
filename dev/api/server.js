@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
+const path = require("path");
 
 const app = express();
 app.use(cors());
@@ -18,6 +19,14 @@ const gigSchema = new mongoose.Schema({
 });
 
 const Gig = mongoose.model("Gig", gigSchema);
+
+// server front end
+
+app.use(express.static(path.join(__dirname, "../portfolio")));
+
+app.get("/", (req, resx) => {
+    res.sendFile(path.join(__dirname, "../portfolio/index.html"));
+});
 
 // get all gigs
 
