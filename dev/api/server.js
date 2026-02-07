@@ -8,7 +8,10 @@ app.use(express.json());
 
 // connect to mongodb
 
-mongoose.connect("mongodb://127.0.0.1:27017/offramp");
+mongoose
+    .connect("mongodb://127.0.0.1:27017/offramp")
+    .then(() => console.log("MongoDB connected"))
+    .catch(err => console.error("MongoDB connection error:", err));
 
 const gigSchema = new mongoose.Schema({
     date: String,
@@ -75,4 +78,5 @@ app.delete("/gigs/:id", async (req, res) => {
     }
 });
 
-app.listen(3000, () => console.log("API running at http://localhost:3000"));
+const PORT = 3000;
+app.listen(PORT, () => console.log(`API running at http://localhost:${PORT}`));
