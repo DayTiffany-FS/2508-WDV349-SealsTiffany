@@ -48,3 +48,15 @@ Express is a popular framework to power an API. Describe your idea for building 
 A popular solution for relational database work is to utilize Sequelize as an ORM. Are you familiar with migrations, models, and seeding? What tools and solutions do you propose for your application? For example, utilizing an ORM to build out models with full validated CRUD.
 
 * My initial thought is to use MongoDB due to my familiarity with it from previous assignments. I would like to look into other options to see if they will make the logic run more smoothly and ease of conversations for booking of the band.
+
+# Footer
+
+## Change Order
+
+* Proposal - This project appears to be in decent order. I think I set up the details pretty well with a good understanding of what this project is for and what the needs are for the client.
+
+* Tech Stack - I think this follows with the proposal. There was good effort and forethought put into the initial creation of this project. I do not see anything necessary to change at this point in time.
+
+* Work Remaining - There is a significant amount of work left to do. I still need to get my routes completely set up, the design needs work, and functionality still needs to be coordinated and tested.
+
+* Proposed Changes - None at this time. I am happy with the ideas I had and where I need to go with this project at this point.

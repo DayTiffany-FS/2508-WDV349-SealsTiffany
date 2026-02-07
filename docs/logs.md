@@ -62,7 +62,13 @@ Each week I will summarize my milestone activity and progress by writing a stand
 
 ### Week 4
 
-My final stand up...
+⚙️ Overview - The final week focused on research and basic code establishment.
+<br>
+🌵 Challenges - Time management was my biggest problem this week.
+<br>
+🏆 Accomplishments - Getting my front end connected to my back end without any major hiccups.
+<br>
+🔮 Next Steps - Content and design look like my next big steps. Making sure I have the right info that I need to put on each portion of the page/app. Followed by creating 
 
 
 
