@@ -1,16 +1,20 @@
 import { Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
 import LandingPage from "./pages/LandingPage";
+import About from "./pages/About";
 import Gigs from "./pages/Gigs";
 import Contact from "./pages/Contact";
-import AboutPage from "./pages/About"; // <-- new import
+
 
 export default function App() {
   return (
-    <Routes>
-      <Route path="/" element={<LandingPage />} />
-      <Route path="/gigs" element={<Gigs />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/about" element={<AboutPage />} /> {/* new route */}
-    </Routes>
+    <Layout>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/gigs" element={<Gigs />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Layout>
   );
 }
