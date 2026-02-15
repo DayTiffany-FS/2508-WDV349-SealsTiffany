@@ -1,0 +1,19 @@
+.gig-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.gig-card {
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: white;
+  text-align: center;
+}
+
+.gig-date {
+  font-weight: bold;
+  color: #444;
+}
