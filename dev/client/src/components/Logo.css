@@ -1,0 +1,9 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.logo img {
+  max-width: 200px;
+}
