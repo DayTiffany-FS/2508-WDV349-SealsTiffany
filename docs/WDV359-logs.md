@@ -38,3 +38,13 @@ Week 1 has been primarily research focused with organizing set up details.
 🔮 Next Steps - What I plan to prioritize and do next
 
 <br>
+
+## 📢 &nbsp; Week #2 Stand Up
+
+⚙️ Overview - Week 2 was heavily focused on coding and making a working product.
+<br>
+🌵 Challenges - Getting the database to function the way I need it to took a little effort and research.
+<br>
+🏆 Accomplishments - It may not look pretty, but the project is fairly functional in displaying most of the information I want it to for the intended clients.
+<br>
+🔮 Next Steps - Fixing functionality is a huge priority while also adding in the missing pieces of the project.
