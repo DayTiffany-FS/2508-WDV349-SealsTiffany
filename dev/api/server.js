@@ -35,7 +35,7 @@ app.get("/", (req, resx) => {
 
 app.get("/gigs", async (req, res) => {
     try {
-        const gigs = await Gig.find().sort({ date: 1 });
+        const gigs = await Gig.find();
         res.json(gigs);
     } catch (err) {
         res.status(500).json({ message: err.message });

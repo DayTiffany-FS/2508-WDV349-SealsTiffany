@@ -1,50 +1,54 @@
-import { useEffect, useState } from "react";
 import "./GigList.css";
 
-export default function GigList() {
-  const [gigs, setGigs] = useState([]);
-
-  useEffect(() => {
-    const fetchGigs = async () => {
-      try {
-        const res = await fetch("http://localhost:3000/gigs");
-        const data = await res.json();
-        setGigs(data);
-      } catch (err) {
-        console.error("Error fetching gigs:", err);
-      }
-    };
-
-    fetchGigs();
-  }, []);
-
-  // ✅ format MongoDB date → "June 6, 2026"
-  function formatDate(dateString) {
-    const [year, month, day] = dateString.split("-");
-    return new Date(year, month - 1, day).toLocaleDateString("en-US", {
-      month: "long",
-      day: "numeric",
-      year: "numeric"
-    });
+const gigs = [
+  {
+    id: 1,
+    date: "February 28, 2026",
+    venue: "Wild Wing Cafe",
+    city: "Columbus, GA"
+  },
+  {
+    id: 2,
+    date: "March 17, 2026",
+    venue: "Private Party",
+    city: "Private Event"
+  },
+  {
+    id: 3,
+    date: "April 18, 2026",
+    venue: "Sissy's Place",
+    city: "Phenix City, AL"
+  },
+  {
+    id: 4,
+    date: "April 25, 2026",
+    venue: "Downtown LaGrange",
+    city: "LaGrange, GA"
+  },
+  {
+    id: 5,
+    date: "June 6, 2026",
+    venue: "The Loft",
+    city: "Columbus, GA"
+  },
+  {
+    id: 6,
+    date: "July 18, 2026",
+    venue: "Tavern on 74",
+    city: "Peachtree City, GA"
   }
+];
 
+export default function GigList() {
   return (
     <section className="gig-list">
-      {gigs.length === 0 ? (
-        <p>No upcoming gigs yet.</p>
-      ) : (
-        gigs.map((gig) => (
-          <div key={gig._id} className="gig-card">
-            <h2>{gig.venue}</h2>
-            <p>{gig.city}</p>
-
-            {/* ✅ formatted date */}
-            <p className="gig-date">{formatDate(gig.date)}</p>
-
-            {gig.time && <p>{gig.time}</p>}
-          </div>
-        ))
-      )}
+      {gigs.map((gig) => (
+        <div key={gig.id} className="gig-card">
+          <h2>{gig.venue}</h2>
+          <p>{gig.city}</p>
+          <p className="gig-date">{gig.date}</p>
+        </div>
+      ))}
     </section>
   );
 }
