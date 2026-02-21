@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Pictures from "../components/Pictures";
 import Videos from "../components/Videos";
-//import "./Media.css";
 
 export default function Media() {
   const [tab, setTab] = useState("pictures");
