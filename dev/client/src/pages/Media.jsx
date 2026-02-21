@@ -8,7 +8,7 @@ export default function Media() {
 
   return (
     <main className="media-page">
-      <h1>Media</h1>
+      <h1>Media!</h1>
 
       <div className="media-tabs">
         <button
