@@ -1,12 +1,22 @@
+import { useEffect, useState } from "react";
 import GigList from "../components/GigList";
 
 export default function Gigs() {
-  return (
-    <main className="page">
-      <h1>All Gigs</h1>
-      <p>Here is the full list of upcoming shows.</p>
+  const [gigs, setGigs] = useState([]);
 
-      <GigList />
-    </main>
-  );
+  useEffect(() => {
+    async function fetchGigs() {
+      try {
+        const res = await fetch("http://localhost:3000/gigs");
+        const data = await res.json();
+        setGigs(data);
+      } catch (err) {
+        console.error("Error fetching gigs:", err);
+      }
+    }
+
+    fetchGigs();
+  }, []);
+
+  return <GigList gigs={gigs} />;
 }
