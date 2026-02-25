@@ -1,13 +1,29 @@
 .nav {
   display: flex;
-  gap: 2rem;
-  justify-content: center;
-  padding: 1rem;
-  background-color: var(--bg-dark);
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #222;
+  color: white;
 }
 
-.nav a {
-  color: var(--text-light);
+.nav-left a,
+.nav-right a {
+  color: white;
   text-decoration: none;
-  font-weight: 600;
+  margin-right: 15px;
+}
+
+.nav-right {
+  margin-left: auto;
+}
+
+.admin-btn {
+  background-color: #ff6b6b;
+  padding: 5px 12px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.admin-btn:hover {
+  background-color: #ff3b3b;
 }

@@ -4,11 +4,16 @@ import "./NavBar.css";
 export default function NavBar() {
   return (
     <nav className="nav">
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
-      <Link to="/media">Media</Link>
-      <Link to="/gigs">Gigs</Link>
-      <Link to="/contact">Contact</Link>
+      <div className="nav-left">
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/media">Media</Link>
+        <Link to="/gigs">Gigs</Link>
+        <Link to="/contact">Contact</Link>
+      </div>
+      <div className="nav-right">
+        <Link to="/admin" className="admin-btn">Admin</Link>
+      </div>
     </nav>
   );
 }

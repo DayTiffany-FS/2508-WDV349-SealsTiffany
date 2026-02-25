@@ -1,17 +1,10 @@
 import { useState, useEffect } from "react";
 import { createGig, updateGig, deleteGig, getGigs } from "../api";
 
-export default function AdminGigs() {
-  const [form, setForm] = useState({
-    date: "",
-    time: "",
-    venue: "",
-    city: ""
-  });
+export default function AdminGigs({ token, onLogout }) {
+  const [form, setForm] = useState({ date: "", time: "", venue: "", city: "" });
   const [gigs, setGigs] = useState([]);
   const [editingId, setEditingId] = useState(null);
-
-  const token = localStorage.getItem("token");
 
   useEffect(() => {
     fetchGigs();
@@ -35,12 +28,7 @@ export default function AdminGigs() {
   }
 
   function handleEdit(gig) {
-    setForm({
-      date: gig.date,
-      time: gig.time || "",
-      venue: gig.venue,
-      city: gig.city
-    });
+    setForm({ date: gig.date, time: gig.time || "", venue: gig.venue, city: gig.city });
     setEditingId(gig._id);
   }
 
@@ -51,60 +39,35 @@ export default function AdminGigs() {
     }
   }
 
+  function handleLogout() {
+    localStorage.removeItem("token");
+    onLogout();
+  }
+
   return (
     <div>
+      <button onClick={handleLogout} style={{ float: "right", marginBottom: "10px" }}>Logout</button>
+      
       <form onSubmit={handleSubmit}>
         <h2>{editingId ? "Edit Gig" : "Create Gig"}</h2>
-
-        <input
-          placeholder="Date (YYYY-MM-DD)"
-          value={form.date}
-          onChange={e => setForm({ ...form, date: e.target.value })}
-        />
-        <input
-          placeholder="Time"
-          value={form.time}
-          onChange={e => setForm({ ...form, time: e.target.value })}
-        />
-        <input
-          placeholder="Venue"
-          value={form.venue}
-          onChange={e => setForm({ ...form, venue: e.target.value })}
-        />
-        <input
-          placeholder="City"
-          value={form.city}
-          onChange={e => setForm({ ...form, city: e.target.value })}
-        />
-
+        <input placeholder="Date (YYYY-MM-DD)" value={form.date} onChange={e => setForm({ ...form, date: e.target.value })} />
+        <input placeholder="Time" value={form.time} onChange={e => setForm({ ...form, time: e.target.value })} />
+        <input placeholder="Venue" value={form.venue} onChange={e => setForm({ ...form, venue: e.target.value })} />
+        <input placeholder="City" value={form.city} onChange={e => setForm({ ...form, city: e.target.value })} />
         <button type="submit">{editingId ? "Update Gig" : "Add Gig"}</button>
-        {editingId && (
-          <button
-            type="button"
-            onClick={() => {
-              setForm({ date: "", time: "", venue: "", city: "" });
-              setEditingId(null);
-            }}
-          >
-            Cancel
-          </button>
-        )}
+        {editingId && <button type="button" onClick={() => { setForm({ date: "", time: "", venue: "", city: "" }); setEditingId(null); }}>Cancel</button>}
       </form>
 
       <h2>Existing Gigs</h2>
-      {gigs.length === 0 ? (
-        <p>No gigs posted yet.</p>
-      ) : (
+      {gigs.length === 0 ? <p>No gigs posted yet.</p> : (
         <ul>
-          {gigs
-            .sort((a, b) => new Date(a.date) - new Date(b.date))
-            .map(gig => (
-              <li key={gig._id}>
-                {gig.date} – {gig.venue} {gig.city && `• ${gig.city}`}
-                <button onClick={() => handleEdit(gig)}>Edit</button>
-                <button onClick={() => handleDelete(gig._id)}>Delete</button>
-              </li>
-            ))}
+          {gigs.sort((a, b) => new Date(a.date) - new Date(b.date)).map(gig => (
+            <li key={gig._id}>
+              {gig.date} – {gig.venue} {gig.city && `• ${gig.city}`}
+              <button onClick={() => handleEdit(gig)}>Edit</button>
+              <button onClick={() => handleDelete(gig._id)}>Delete</button>
+            </li>
+          ))}
         </ul>
       )}
     </div>
