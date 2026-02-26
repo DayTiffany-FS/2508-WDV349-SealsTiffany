@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { createGig, updateGig, deleteGig, getGigs } from "../api";
+import "../styles/Admin.css";
 
 export default function AdminGigs({ token, onLogout }) {
   const [form, setForm] = useState({ date: "", time: "", venue: "", city: "" });
@@ -45,29 +46,64 @@ export default function AdminGigs({ token, onLogout }) {
   }
 
   return (
-    <div>
-      <button onClick={handleLogout} style={{ float: "right", marginBottom: "10px" }}>Logout</button>
+    <div className="admin-container">
+      <button className="logout-btn" onClick={handleLogout}>Logout</button>
       
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="admin-form">
         <h2>{editingId ? "Edit Gig" : "Create Gig"}</h2>
-        <input placeholder="Date (YYYY-MM-DD)" value={form.date} onChange={e => setForm({ ...form, date: e.target.value })} />
-        <input placeholder="Time" value={form.time} onChange={e => setForm({ ...form, time: e.target.value })} />
-        <input placeholder="Venue" value={form.venue} onChange={e => setForm({ ...form, venue: e.target.value })} />
-        <input placeholder="City" value={form.city} onChange={e => setForm({ ...form, city: e.target.value })} />
+        <input
+          placeholder="Date (YYYY-MM-DD)"
+          value={form.date}
+          onChange={e => setForm({ ...form, date: e.target.value })}
+        />
+        <input
+          placeholder="Time"
+          value={form.time}
+          onChange={e => setForm({ ...form, time: e.target.value })}
+        />
+        <input
+          placeholder="Venue"
+          value={form.venue}
+          onChange={e => setForm({ ...form, venue: e.target.value })}
+        />
+        <input
+          placeholder="City"
+          value={form.city}
+          onChange={e => setForm({ ...form, city: e.target.value })}
+        />
         <button type="submit">{editingId ? "Update Gig" : "Add Gig"}</button>
-        {editingId && <button type="button" onClick={() => { setForm({ date: "", time: "", venue: "", city: "" }); setEditingId(null); }}>Cancel</button>}
+        {editingId && (
+          <button
+            type="button"
+            onClick={() => {
+              setForm({ date: "", time: "", venue: "", city: "" });
+              setEditingId(null);
+            }}
+          >
+            Cancel
+          </button>
+        )}
       </form>
 
       <h2>Existing Gigs</h2>
-      {gigs.length === 0 ? <p>No gigs posted yet.</p> : (
-        <ul>
-          {gigs.sort((a, b) => new Date(a.date) - new Date(b.date)).map(gig => (
-            <li key={gig._id}>
-              {gig.date} – {gig.venue} {gig.city && `• ${gig.city}`}
-              <button onClick={() => handleEdit(gig)}>Edit</button>
-              <button onClick={() => handleDelete(gig._id)}>Delete</button>
-            </li>
-          ))}
+      {gigs.length === 0 ? (
+        <p>No gigs posted yet.</p>
+      ) : (
+        <ul className="admin-gig-list">
+          {gigs
+            .sort((a, b) => new Date(a.date) - new Date(b.date))
+            .map((gig, index) => (
+              <li
+                key={gig._id}
+                className={index % 2 === 0 ? "gig-card even" : "gig-card odd"}
+              >
+                {gig.date} – {gig.venue} {gig.city && `• ${gig.city}`}
+                <div className="gig-buttons">
+                  <button onClick={() => handleEdit(gig)}>Edit</button>
+                  <button onClick={() => handleDelete(gig._id)}>Delete</button>
+                </div>
+              </li>
+            ))}
         </ul>
       )}
     </div>
