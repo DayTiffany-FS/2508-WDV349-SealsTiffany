@@ -16,3 +16,10 @@
 .pictures-grid img:hover {
   transform: scale(1.05);
 }
+
+@media (max-width: 768px) {
+  .pictures-grid {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+}
