@@ -2,28 +2,47 @@
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  background-color: #222;
+  background-color: #710036;
   color: white;
 }
 
-.nav-left a,
-.nav-right a {
-  color: white;
-  text-decoration: none;
-  margin-right: 15px;
+.nav-spacer {
+  flex: 1;
+}
+
+.nav-center{
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex: 1
 }
 
 .nav-right {
-  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.nav-center a,
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-center a:hover{
+  background-color: #fdf016;
+  color:#0b0008;
 }
 
 .admin-btn {
-  background-color: #ff6b6b;
+  background-color: #0b0008;
   padding: 5px 12px;
   border-radius: 4px;
   transition: background 0.2s;
+  font-weight: bold;
 }
 
 .admin-btn:hover {
-  background-color: #ff3b3b;
+  background-color: #ff7600;
 }
