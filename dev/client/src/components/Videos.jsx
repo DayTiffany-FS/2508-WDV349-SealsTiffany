@@ -1,4 +1,4 @@
-// import "./Videos.css";
+import "./Videos.css";
 
 export default function Videos() {
   const youtubeVideos = [

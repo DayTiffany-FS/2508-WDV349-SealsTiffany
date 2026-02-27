@@ -1,13 +1,13 @@
 import { useState } from "react";
 import Pictures from "../components/Pictures";
 import Videos from "../components/Videos";
+import "../styles/Media.css"
 
 export default function Media() {
   const [tab, setTab] = useState("pictures");
 
   return (
     <main className="media-page">
-      <h1>Media</h1>
 
       <div className="media-tabs">
         <button

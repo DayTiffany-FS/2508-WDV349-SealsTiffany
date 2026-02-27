@@ -6,6 +6,7 @@ export default function ContactForm() {
     name: "",
     email: "",
     eventDate: "",
+    eventTime: "",
     message: ""
   });
 
@@ -31,17 +32,21 @@ export default function ContactForm() {
         },
         body: JSON.stringify(formData)
       });
+      console.log(res.status, await res.text());
 
       if (res.ok) {
         setSubmitted(true);
 
-        // reset form
         setFormData({
           name: "",
           email: "",
           eventDate: "",
+          eventTime: "",
           message: ""
         });
+
+        setTimeout(() => setSubmitted(false), 5000);
+
       } else {
         alert("Something went wrong. Please try again.");
       }
@@ -55,7 +60,6 @@ export default function ContactForm() {
 
   return (
     <section className="contact-form">
-      <h2>Book Off Ramp</h2>
 
       {submitted && (
         <p className="success">Thanks! We’ll be in touch soon.</p>
@@ -90,6 +94,16 @@ export default function ContactForm() {
             type="date"
             name="eventDate"
             value={formData.eventDate}
+            onChange={handleChange}
+          />
+        </label>
+
+        <label>
+          Event Time
+          <input
+            type="time"
+            name="eventTime"
+            value={formData.eventTime}
             onChange={handleChange}
           />
         </label>
