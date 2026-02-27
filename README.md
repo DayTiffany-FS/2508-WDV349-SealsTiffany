@@ -29,7 +29,6 @@ A full-stack web application for the Off Ramp Band that showcases their media, g
 ## Demo
 
 ![Off Ramp Band Screenshot](./docs/ORSS.png)  
-*Replace with a screenshot of your site.*
 
 ---
 
