@@ -32,11 +32,11 @@ export default function ContactForm() {
         },
         body: JSON.stringify(formData)
       });
+      console.log(res.status, await res.text());
 
       if (res.ok) {
         setSubmitted(true);
 
-        // reset form
         setFormData({
           name: "",
           email: "",
@@ -44,6 +44,9 @@ export default function ContactForm() {
           eventTime: "",
           message: ""
         });
+
+        setTimeout(() => setSubmitted(false), 5000);
+
       } else {
         alert("Something went wrong. Please try again.");
       }

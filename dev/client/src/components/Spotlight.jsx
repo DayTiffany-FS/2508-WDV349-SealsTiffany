@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { spotlightImages } from "../data/frontimages"
+import spotlightImages from "../data/frontimages"
 import "./Spotlight.css";
 
 export default function Spotlight() {
