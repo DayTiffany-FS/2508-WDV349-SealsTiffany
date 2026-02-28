@@ -71,10 +71,10 @@ Week 3 is another heavy coding week, with emphasis on media implementation.
 
 Week 4 is focused mostly on styling and bug fixing.
 
-⚙️ Overview - coming soon...
+⚙️ Overview - Several stylistic files were created and changed. Many bugs and errors were fixed.
 <br>
-🌵 Challenges - coming soon...
+🌵 Challenges - Bug fixing was my biggest challenge. Some problems I didn't realize I had until I tried to do my demonstration for the showcase.
 <br>
-🏆 Accomplishments - coming soon...
+🏆 Accomplishments - Fixing the bugs. It took some effort but once I realized where I made my mistakes, the fix felt like a big accomplishment to me.
 <br>
-🔮 Next Steps - coming soon...
+🔮 Next Steps - A beta release. I did not want to incude it in my formal turn in at this point because I wanted time to work on it and make sure I do it correctly.
