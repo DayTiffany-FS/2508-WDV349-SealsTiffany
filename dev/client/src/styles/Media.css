@@ -1,0 +1,47 @@
+.media-tabs {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.media-tabs button {
+  font-size: 1.5rem;    
+  padding: 1rem 2.5rem;   
+  border-radius: 10px;
+  border: none;
+  background-color: #fefeff;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.media-tabs button:first-child {
+  margin-left: 2rem;
+}
+
+.media-tabs button:last-child {
+  margin-right: 2rem;
+}
+
+.media-tabs button:hover {
+  background-color: #ff7600;
+  color: #fefeff;
+  transform: scale(1.05);
+}
+
+.media-tabs .active {
+  background-color: #710036;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .media-tabs {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .media-tabs button:first-child,
+  .media-tabs button:last-child {
+    margin: 0;
+  }
+}
