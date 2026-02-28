@@ -1,0 +1,10 @@
+:root {
+  --bg-dark: #111;
+  --bg-light: #f5f5f5;
+  --text-light: #ffffff;
+  --text-dark: #111111;
+  --accent: #c0392b;
+
+  --max-width: 1100px;
+  --page-padding: 1.5rem;
+}
