@@ -7,7 +7,7 @@ export default function GigsPreview() {
   useEffect(() => {
     const fetchGigs = async () => {
       try {
-        const res = await fetch("http://localhost:3000/gigs");
+        const res = await fetch("https://two508-wdv349-sealstiffany.onrender.com/gigs");
         const data = await res.json();
 
         // sort by date (string format YYYY-MM-DD)

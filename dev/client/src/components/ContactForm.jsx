@@ -25,7 +25,7 @@ export default function ContactForm() {
     setLoading(true);
 
     try {
-      const res = await fetch("http://localhost:3000/bookings", {
+      const res = await fetch("/api/bookings", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

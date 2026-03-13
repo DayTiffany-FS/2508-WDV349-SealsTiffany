@@ -7,7 +7,7 @@ export default function Gigs() {
   useEffect(() => {
     async function fetchGigs() {
       try {
-        const res = await fetch("http://localhost:3000/gigs");
+        const res = await fetch("https://two508-wdv349-sealstiffany.onrender.com/gigs");
         const data = await res.json();
         setGigs(data);
       } catch (err) {

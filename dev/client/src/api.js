@@ -1,4 +1,7 @@
-const API_URL = 'http://localhost:3000';
+//const API_URL = 'http://localhost:3000';
+
+//for beta
+const API_URL = 'https://two508-wdv349-sealstiffany.onrender.com';
 
 export async function login(credentials) {
   const res = await fetch(`${API_URL}/auth/login`, {
