@@ -29,7 +29,12 @@ export default function Gigs() {
         />
       </Helmet>
 
-      <GigList gigs={gigs} />;
+      <h1>Upcoming Live Shows by Off Ramp</h1>
+      <p>
+        Check out upcoming Off Ramp performances across Georgia and Alabama, including festivals, private events, and local venues.
+      </p>
+
+      <GigList gigs={gigs} />
     </>
   )
 }

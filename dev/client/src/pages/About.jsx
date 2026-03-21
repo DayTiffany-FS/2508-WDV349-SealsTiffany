@@ -16,12 +16,11 @@ export default function AboutPage() {
           <div className="info-part">
             <h1>About Off Ramp</h1>
             <p>
-              Off Ramp formed in 2014 in west-central Georgia. Over the years,
-              we've played everything from classic rock and pop to country hits,
-              bringing energy and fun to every stage we hit. We’ve performed at 
-              local festivals, private events, and bars across the state, 
-              and we’re always looking for new venues and audiences to
-              share our music with.
+              Off Ramp formed in 2014 in west-central Georgia. Off Ramp is based in LaGrange 
+              and Peachtree City, Georgia. Over the years, we've played everything from classic rock and pop 
+              to country hits, bringing energy and fun to every stage we hit. We’ve performed at 
+              local festivals, private events, and bars across the state, and we’re always looking for new venues 
+              and audiences to share our music with.
             </p>
           </div>
 
