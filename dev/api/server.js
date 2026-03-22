@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 mongoose
-  .connect("mongodb+srv://offramp_db_user:offramp123@off-ramp.dwnoixi.mongodb.net/offramp?retryWrites=true&w=majority")
+  .connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.error("MongoDB connection error:", err));
 
