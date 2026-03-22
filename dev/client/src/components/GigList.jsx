@@ -4,12 +4,8 @@ export default function GigList({ gigs }) {
   if (!gigs || gigs.length === 0) return <p>No upcoming gigs yet.</p>;
 
   function formatDate(dateStr) {
-    const date = new Date(dateStr);
-    return date.toLocaleDateString("en-US", {
-      month: "long",
-      day: "numeric",
-      year: "numeric"
-    });
+    const [year, month, day] = dateStr.split("-");
+    return `${month}-${day}-${year}`;
   }
 
   return (
