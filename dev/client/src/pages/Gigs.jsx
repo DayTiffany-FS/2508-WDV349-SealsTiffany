@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import GigList from "../components/GigList";
+import { Helmet } from "react-helmet";
 
 export default function Gigs() {
   const [gigs, setGigs] = useState([]);
@@ -18,5 +19,22 @@ export default function Gigs() {
     fetchGigs();
   }, []);
 
-  return <GigList gigs={gigs} />;
+  return (
+    <>
+      <Helmet>
+        <title>Upcoming Shows | Off Ramp</title>
+        <meta
+          name="description"
+          content="Check out upcoming Off Ramp shows and live performances in Western Georgia and Eastern Alabama."
+        />
+      </Helmet>
+
+      <h1>Upcoming Live Shows by Off Ramp</h1>
+      <p>
+        Check out upcoming Off Ramp performances across Georgia and Alabama, including festivals, private events, and local venues.
+      </p>
+
+      <GigList gigs={gigs} />
+    </>
+  )
 }
