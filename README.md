@@ -92,3 +92,19 @@ A full-stack web application for the Off Ramp Band that showcases their media, g
     cd ../client
     npm run dev
     ```
+
+## Live Site Link
+
+https://2508-wdv-349-seals-tiffany-git-main-daytiffany-fs-projects.vercel.app/
+
+## Client Usage
+
+### Viewing the Site
+- Visit the live site link above
+
+### Booking Requests
+- Fill out the contact form
+- Submissions are sent to the band's email
+
+### Managing Content
+- Use admin login (see attached packet for login details)
