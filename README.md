@@ -8,7 +8,7 @@
 
 <br>
 
-# Off Ramp Band Website
+# Off Ramp Band Web Application
 
 A full-stack web application for the Off Ramp Band that showcases their media, gigs, and allows users to submit booking requests.
 
@@ -20,9 +20,11 @@ A full-stack web application for the Off Ramp Band that showcases their media, g
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Installation](#installation)
-- [Usage](#usage)
+- [Live Site](#live-site-link)
+- [Client Usage](#client-usage)
+- [Deploymnet](#deployment)
 - [Folder Structure](#folder-structure)
-- [License](#license)
+- [Security](#security)
 
 ---
 
@@ -93,7 +95,7 @@ A full-stack web application for the Off Ramp Band that showcases their media, g
     npm run dev
     ```
 
-## Live Site Link
+## Live Site
 
 https://2508-wdv-349-seals-tiffany-git-main-daytiffany-fs-projects.vercel.app/
 
@@ -107,4 +109,26 @@ https://2508-wdv-349-seals-tiffany-git-main-daytiffany-fs-projects.vercel.app/
 - Submissions are sent to the band's email
 
 ### Managing Content
-- Use admin login (see attached packet for login details)
+- Use admin login (credentials provided separately)
+
+## Deployment
+
+- Frontend hosted on Vercel
+- Backend hosted on Render
+- Database: MongoDB Atlas
+
+Environment variables must be configured in the hosting platform.
+
+## Folder Structure
+
+/client → React frontend  
+/server → Express backend  
+
+## Future Features
+
+ - Photo albums per gig
+ - Easy video additions
+
+ ## Security 
+
+ Sensitive data such as API keys and email credentials are stored in environment variables and are not included in this repository.
